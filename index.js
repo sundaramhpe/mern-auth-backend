@@ -18,3 +18,6 @@ mongoose.connect(process.env.MONGODB_CONNECTION_STRING,
    if(err) throw err;//{console.log('Db not connected') }
    console.log('DB connected ') 
 });
+
+// set up routes
+app.use("/users",require("./routes/userRoutes")); 
